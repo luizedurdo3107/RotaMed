@@ -1,0 +1,1072 @@
+/* ====================================================
+   RotaMed — Estilos Globais
+   Design preservado do projeto original
+   ==================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  color: #0b1735;
+  background: #f7f9fc;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  border: 0;
+}
+
+svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* ====================================================
+   HEADER — Totem
+   ==================================================== */
+
+.header {
+  height: 78px;
+  background: #fff;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  padding: 0 34px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  min-width: 220px;
+}
+
+.brand > span {
+  color: #2563eb;
+}
+
+.logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 11px;
+  background: #2161f5;
+  color: #fff;
+  display: grid;
+  place-items: center;
+}
+
+.steps {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.steps > i {
+  width: 10px;
+  height: 1px;
+  background: #dce3ed;
+}
+
+.step {
+  padding: 10px 16px;
+  border-radius: 22px;
+  background: #f0f4f9;
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+.step b {
+  margin-right: 5px;
+  font-size: 11px;
+}
+
+.step.active {
+  background: #2161f5;
+  color: #fff;
+}
+
+.step.done {
+  background: #dceaff;
+  color: #2161f5;
+}
+
+.header time {
+  margin-left: auto;
+  color: #8da0b9;
+  font-size: 13px;
+}
+
+/* ====================================================
+   TELA DE IDENTIFICAÇÃO (CPF)
+   ==================================================== */
+
+.identify {
+  max-width: 800px;
+  margin: 75px auto;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 60px;
+}
+
+.eyebrow {
+  font-size: 14px;
+  color: #2161f5;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.identify h1 {
+  font-size: 46px;
+  line-height: 1.15;
+  font-weight: 400;
+  margin: 0 0 15px;
+}
+
+.identify h1 b {
+  font-weight: 500;
+}
+
+.identify p,
+.center > p {
+  font-size: 18px;
+  color: #657a98;
+  line-height: 1.55;
+}
+
+.identify label {
+  display: block;
+  color: #617794;
+  font-size: 13px;
+  margin-top: 28px;
+}
+
+.input {
+  height: 82px;
+  background: #fff;
+  border: 2px solid #dce4ee;
+  border-radius: 15px;
+  margin-top: 9px;
+  padding: 0 25px;
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  color: #c4d2e4;
+  letter-spacing: 2px;
+}
+
+/* CPF de demonstração — exibe apenas UM por vez */
+.demo {
+  font-size: 13px;
+  color: #91a2b8;
+  margin: 12px 0 24px;
+  line-height: 1.6;
+}
+
+.demoCpf {
+  display: block;
+  margin-top: 8px;
+  color: #526985;
+  font-size: 13px;
+}
+
+.demoCpf span {
+  display: block;
+  font-size: 20px;
+  color: #2161f5;
+  letter-spacing: 2px;
+  margin-top: 4px;
+  font-weight: 700;
+}
+
+/* ====================================================
+   BOTÕES
+   ==================================================== */
+
+.primary {
+  height: 68px;
+  background: #2161f5;
+  color: #fff;
+  border-radius: 14px;
+  padding: 0 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  font-weight: 600;
+  font-size: 17px;
+  box-shadow: 0 8px 18px #2161f52b;
+}
+
+.wide {
+  flex: 1;
+}
+
+.secondary {
+  height: 64px;
+  border: 1px solid #dce4ee;
+  background: #fff;
+  border-radius: 14px;
+  padding: 0 27px;
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  color: #526985;
+}
+
+/* ====================================================
+   TECLADO NUMÉRICO
+   ==================================================== */
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 13px;
+}
+
+.keypad button {
+  height: 78px;
+  background: #fff;
+  border: 1px solid #e1e7ef;
+  border-radius: 15px;
+  font-size: 22px;
+  color: #10203f;
+  box-shadow: 0 2px 5px #10203f0d;
+}
+
+/* ====================================================
+   TELA CENTRAL (dados do paciente, token etc.)
+   ==================================================== */
+
+.center {
+  max-width: 850px;
+  margin: 20px auto 60px;
+  text-align: center;
+}
+
+.pill {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  background: #edf5ff;
+  color: #2161f5;
+  padding: 10px 16px;
+  border-radius: 22px;
+  font-size: 13px;
+}
+
+.center h2 {
+  font-size: 43px;
+  font-weight: 400;
+  margin: 12px 0 3px;
+}
+
+.center > p {
+  margin-bottom: 28px;
+}
+
+/* ====================================================
+   CARD DE ATENDIMENTO
+   ==================================================== */
+
+.card,
+.token {
+  background: #fff;
+  border: 1px solid #e1e7ef;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 5px 12px #10203f0d;
+}
+
+.cardHead {
+  height: 80px;
+  background: #2161f5;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 0 30px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: left;
+}
+
+.info {
+  padding: 21px 32px;
+  border-bottom: 1px solid #edf1f5;
+}
+
+.info:nth-child(odd) {
+  border-right: 1px solid #edf1f5;
+}
+
+.info small,
+.tokenMeta small,
+.routeCard small,
+.eta small {
+  display: block;
+  color: #7d90aa;
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  margin-bottom: 7px;
+}
+
+.info span {
+  font-size: 17px;
+}
+
+.actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 30px;
+}
+
+/* ====================================================
+   ÍCONE DE SUCESSO
+   ==================================================== */
+
+.success {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #dcfae8;
+  color: #16a45a;
+  display: grid;
+  place-items: center;
+  margin: 30px auto 18px;
+  font-size: 28px;
+}
+
+/* ====================================================
+   TOKEN
+   ==================================================== */
+
+.token {
+  margin: 25px auto 30px;
+}
+
+.token header {
+  height: 47px;
+  background: #101a32;
+  color: #b9c9e2;
+  display: grid;
+  place-items: center;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+}
+
+.token > strong {
+  display: block;
+  font-size: 78px;
+  font-weight: 400;
+  color: #2161f5;
+  padding: 32px;
+}
+
+.tokenMeta {
+  border-top: 1px solid #edf1f5;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 18px;
+}
+
+.tokenMeta span {
+  font-size: 13px;
+}
+
+/* ====================================================
+   BANNER DE CHAMADA / AGUARDO
+   ==================================================== */
+
+.calledBanner {
+  background: #f0fff8;
+  border: 2px solid #16a45a;
+  border-radius: 18px;
+  padding: 28px;
+  margin-bottom: 20px;
+}
+
+.calledBanner strong {
+  font-size: 22px;
+  color: #16a45a;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.calledBanner p {
+  color: #3a7355;
+  margin: 0 0 18px;
+}
+
+.waitingBanner {
+  background: #f5f8ff;
+  border: 1px solid #dce8ff;
+  border-radius: 14px;
+  padding: 24px 28px;
+  color: #5573a8;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.waitingBanner p {
+  margin: 0;
+}
+
+/* Botão "Ver rota" disponível mesmo sem chamada do hospital */
+.btnVerRota {
+  height: 56px;
+  background: #fff;
+  color: #2161f5;
+  border: 2px solid #2161f5;
+  border-radius: 14px;
+  padding: 0 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  width: 100%;
+  transition: background 0.15s, color 0.15s;
+}
+
+.btnVerRota:hover {
+  background: #2161f5;
+  color: #fff;
+}
+
+/* ====================================================
+   TELA DE ROTA E MAPA
+   ==================================================== */
+
+.route {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  min-height: calc(100vh - 78px);
+}
+
+.routeInfo {
+  padding: 35px 45px;
+  border-right: 1px solid #e0e6ee;
+}
+
+.routeInfo h2 {
+  font-size: 37px;
+  font-weight: 400;
+  margin: 0 0 7px;
+}
+
+.routeInfo > p {
+  color: #647a98;
+  line-height: 1.5;
+}
+
+.routeCard {
+  background: #fff;
+  border: 1px solid #e0e7ef;
+  border-radius: 17px;
+  padding: 18px;
+  margin: 22px 0 14px;
+}
+
+.routeCard > div {
+  display: flex;
+  gap: 12px;
+}
+
+.routeCard svg {
+  color: #2161f5;
+}
+
+.routeCard hr {
+  border: 0;
+  border-top: 1px solid #edf1f5;
+  margin: 16px 0;
+}
+
+.eta {
+  background: #2161f5;
+  color: #fff;
+  border-radius: 15px;
+  padding: 18px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.eta small {
+  color: #d5e3ff;
+}
+
+.eta b {
+  font-size: 22px;
+}
+
+.routeInfo ol {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px;
+}
+
+.routeInfo li {
+  position: relative;
+  padding: 7px 0 7px 28px;
+  font-size: 13px;
+  color: #5c7392;
+}
+
+.routeInfo li::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #bed2f9;
+}
+
+.routeInfo li i {
+  position: absolute;
+  left: 1px;
+  top: 12px;
+  width: 12px;
+  height: 12px;
+  background: #2161f5;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.routeInfo li.last {
+  color: #2161f5;
+  font-weight: 600;
+}
+
+.routeInfo li.last i {
+  background: #16a45a;
+}
+
+/* ====================================================
+   MAPA VISUAL
+   ==================================================== */
+
+.map {
+  position: relative;
+  background: #f3f6fa;
+  overflow: hidden;
+}
+
+.room {
+  position: absolute;
+  background: #fff;
+  border: 3px solid #dce5ef;
+  border-radius: 22px;
+  text-align: center;
+  color: #8da1bc;
+  font-weight: 700;
+}
+
+.reception {
+  left: 8%;
+  bottom: 17%;
+  width: 310px;
+  height: 190px;
+  padding-top: 65px;
+}
+
+.reception b {
+  display: block;
+  color: #2161f5;
+  margin-top: 28px;
+}
+
+.reception small,
+.destination small {
+  display: block;
+  margin-top: 8px;
+}
+
+.corridor {
+  left: 45%;
+  top: 43%;
+  width: 330px;
+  height: 130px;
+  padding-top: 48px;
+}
+
+.elevator {
+  right: 33%;
+  top: 8%;
+  width: 190px;
+  height: 250px;
+  padding-top: 80px;
+  color: #2161f5;
+}
+
+.destination {
+  right: 5%;
+  top: 34%;
+  width: 310px;
+  height: 170px;
+  padding-top: 50px;
+  color: #2161f5;
+  border-color: #bed8ff;
+}
+
+.path {
+  position: absolute;
+  left: 28%;
+  bottom: 24%;
+  width: 47%;
+  height: 38%;
+  border-top: 7px dashed #2161f5;
+  transform: skewY(-26deg);
+  border-radius: 30px;
+}
+
+.path::after {
+  content: "";
+  position: absolute;
+  right: -2px;
+  top: -13px;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background: #2161f5;
+  box-shadow: 0 0 0 9px #dbe6ff;
+}
+
+/* ====================================================
+   TELA DE DESTINO (tela final com "Entendi")
+   ==================================================== */
+
+.destinationScreen {
+  padding-top: 60px;
+}
+
+.destinationIcon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #dceaff;
+  color: #2161f5;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 20px;
+}
+
+.destinationIcon svg {
+  width: 32px;
+  height: 32px;
+}
+
+.destinationCard {
+  background: #fff;
+  border: 1px solid #e1e7ef;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: left;
+  overflow: hidden;
+  margin: 24px auto;
+  max-width: 520px;
+  box-shadow: 0 4px 12px #10203f0d;
+}
+
+.destinationDetail {
+  padding: 20px 28px;
+  border-bottom: 1px solid #edf1f5;
+}
+
+.destinationDetail:nth-child(odd) {
+  border-right: 1px solid #edf1f5;
+}
+
+.destinationDetail small {
+  display: block;
+  color: #7d90aa;
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+}
+
+.destinationDetail span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.destinationMsg {
+  font-size: 15px;
+  color: #5573a8;
+  margin-bottom: 28px;
+}
+
+/* ====================================================
+   PAINEL HOSPITALAR
+   ==================================================== */
+
+.hospital {
+  min-height: 100vh;
+  background: #f5f7fb;
+}
+
+.hospitalHeader {
+  height: 78px;
+  background: #fff;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  padding: 0 34px;
+  gap: 25px;
+}
+
+.hospitalName {
+  border-left: 1px solid #e3e8ef;
+  padding-left: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hospitalName small {
+  color: #8495ad;
+  margin-top: 3px;
+}
+
+.hospitalHeader button {
+  margin-left: auto;
+  background: #fff;
+  border: 1px solid #dce4ee;
+  border-radius: 10px;
+  padding: 10px 14px;
+  color: #536982;
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+
+.hospital main {
+  max-width: 1350px;
+  margin: auto;
+  padding: 38px 35px;
+}
+
+.hospitalTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 27px;
+}
+
+.hospitalTitle h1 {
+  font-size: 38px;
+  font-weight: 500;
+  margin: 0 0 6px;
+}
+
+.hospitalTitle p {
+  margin: 0;
+  color: #70839d;
+}
+
+.live {
+  background: #e8fbf1;
+  color: #15945a;
+  padding: 9px 13px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* ====================================================
+   ESTATÍSTICAS DO PAINEL
+   ==================================================== */
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.stat {
+  background: #fff;
+  border: 1px solid #e1e7ef;
+  border-radius: 17px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 45px 1fr;
+  align-items: center;
+}
+
+.statIcon {
+  grid-row: span 2;
+  width: 43px;
+  height: 43px;
+  background: #edf4ff;
+  color: #2161f5;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+}
+
+.stat span {
+  color: #778aa4;
+  font-size: 13px;
+}
+
+.stat strong {
+  font-size: 29px;
+}
+
+/* ====================================================
+   COLUNAS E PAINEL DE CHEGADAS
+   ==================================================== */
+
+.columns {
+  display: grid;
+  grid-template-columns: 1.7fr 0.8fr;
+  gap: 20px;
+}
+
+.panel {
+  background: #fff;
+  border: 1px solid #e1e7ef;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.panelTitle {
+  height: 66px;
+  border-bottom: 1px solid #e8edf3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 22px;
+}
+
+.panelTitle h2 {
+  font-size: 18px;
+  margin: 0;
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+
+.panelTitle span {
+  font-size: 12px;
+  color: #8a9bb0;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 70px 1.2fr 0.65fr 1fr 155px;
+  gap: 15px;
+  align-items: center;
+  padding: 18px 20px;
+  border-bottom: 1px solid #edf1f5;
+}
+
+.row > div:nth-child(2),
+.row > div:nth-child(3),
+.row > div:nth-child(4) {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.row > div:nth-child(2) span {
+  color: #72849c;
+}
+
+.row small {
+  font-size: 9px;
+  color: #92a0b2;
+}
+
+.tokenSmall {
+  font-weight: 700;
+  color: #2161f5;
+  background: #edf4ff;
+  padding: 10px;
+  border-radius: 9px;
+  text-align: center;
+}
+
+.status {
+  display: inline-block;
+  background: #e7faef;
+  color: #159457;
+  border-radius: 15px;
+  padding: 5px 9px;
+  font-size: 10px;
+  font-weight: 700;
+  width: max-content;
+}
+
+.call {
+  background: #2161f5;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 11px;
+  margin-top: 7px;
+}
+
+.call:disabled {
+  background: #e9eef5;
+  color: #71839a;
+}
+
+.row.calling {
+  background: #f1f7ff;
+}
+
+/* ====================================================
+   ESTADO VAZIO
+   ==================================================== */
+
+.empty {
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #7c8da4;
+  text-align: center;
+}
+
+.empty svg {
+  margin-bottom: 10px;
+}
+
+.empty b {
+  color: #51657f;
+}
+
+.empty p {
+  font-size: 13px;
+}
+
+/* ====================================================
+   NOTIFICAÇÕES E CHAMADA ATIVA
+   ==================================================== */
+
+.notification .notify {
+  padding: 23px;
+  display: flex;
+  gap: 14px;
+}
+
+.notifyIcon {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: #eaf3ff;
+  color: #2161f5;
+  display: grid;
+  place-items: center;
+  flex: none;
+}
+
+.notify b {
+  color: #2161f5;
+  font-size: 12px;
+}
+
+.notify h3 {
+  font-size: 16px;
+  line-height: 1.35;
+  margin: 7px 0;
+}
+
+.notify p,
+.notify span {
+  font-size: 12px;
+  color: #71849e;
+}
+
+.callPreview {
+  margin: 0 20px 20px;
+  padding: 20px;
+  border-radius: 14px;
+  background: #101a32;
+  color: #fff;
+}
+
+.callPreview .eyebrow {
+  color: #8eb5ff;
+}
+
+.callPreview > strong {
+  font-size: 32px;
+}
+
+.callPreview h3 {
+  margin: 2px 0 6px;
+}
+
+.callPreview p {
+  color: #b9c8dd;
+  line-height: 1.6;
+}
+
+/* ====================================================
+   RESPONSIVIDADE
+   ==================================================== */
+
+@media (max-width: 900px) {
+  .steps {
+    display: none;
+  }
+
+  .identify {
+    grid-template-columns: 1fr;
+    margin: 35px 25px;
+  }
+
+  .route {
+    grid-template-columns: 1fr;
+  }
+
+  .routeInfo {
+    border: 0;
+  }
+
+  .map {
+    min-height: 500px;
+  }
+
+  .columns,
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .row {
+    grid-template-columns: 60px 1fr;
+  }
+
+  .row > div:nth-child(3),
+  .row > div:nth-child(4) {
+    display: none;
+  }
+
+  .destinationCard {
+    grid-template-columns: 1fr;
+  }
+}
